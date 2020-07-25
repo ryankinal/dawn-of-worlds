@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		body {
+			font-family: monospace;
+		}
+
+		#viewport {
+			width: 80vw;
+			height: 95vh;
+			border: solid black 1px;
+			overflow: auto;
+		}
+
+		#out {
+			transform-origin: top left;
+			transform: scale(0.125);
+			width: 10px;
+			height: 10px;
+		}
+
+		.hex-row {
+			white-space: nowrap;
+		}
+
+		.hex-row:last-child {
+			padding-bottom: -50%;
+		}
+
+		/*.hex-row:nth-child(2n) {
+			opacity: 0.8;
+		}*/
+
+		.land-hex polygon {
+			fill: #070;
+		}
+
+		.water-hex polygon {
+			fill: #007;
+		}
+
+		.filled-hex polygon {
+			fill: #700;
+		}
+
+		.center-hex polygon {
+			fill: orange;
+		}
+
+		/*.continent-1 polygon {
+			fill: #010;
+		}
+
+		.continent-2 polygon {
+			fill: #020;
+		}
+
+		.continent-3 polygon {
+			fill: #030;
+		}
+
+		.continent-4 polygon {
+			fill: #040;
+		}
+
+		.continent-5 polygon {
+			fill: #050;
+		}
+
+		.continent-6 polygon {
+			fill: #060;
+		}
+
+		.continent-7 polygon {
+			fill: #070;
+		}
+
+		.continent-8 polygon {
+			fill: #080;
+		}*/
+	</style>
+</head>
+<body>
+	<div id="viewport">
+		<div id="out"></div>
+	</div>
+	<script type="text/javascript" src="hexmap-data.js"></script>
+</body>
+</html>
