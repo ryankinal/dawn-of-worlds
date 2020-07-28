@@ -1,0 +1,20 @@
+{
+  "name": "dawnofworlds",
+  "version": "0.0.1",
+  "description": "Collaborative worldbuilding for RPGs",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "npm run-script build:dev",
+    "build:dev": "webpack && cp src/*.html dist/",
+    "build:prod": "webpack --env.production && cp src/*.html dist/"
+  },
+  "author": "Ryan Kinal",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "amazon-cognito-identity-js": "^4.3.3"
+  }
+}
