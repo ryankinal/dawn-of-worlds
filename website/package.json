@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "build": "npm run-script build:dev",
-    "build:dev": "npm run-script js:dev && npm run-script static",
+    "build:dev": "npm run-script js:dev && npm run-script html && npm run-script static",
     "build:prod": "npm run-script js:prod && npm run-script static",
     "static": "cp -rf src/images dist/ && cp -rf src/styles dist/",
     "html": "node src/pages/make.js",

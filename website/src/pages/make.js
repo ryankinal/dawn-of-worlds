@@ -6,8 +6,8 @@ var fs = Promise.promisifyAll(require('fs'));
 
 var pages = [{
 	name: 'index',
-	base: __dirname + '/outer.tpl',
-	content: __dirname + '/index/index.tpl',
+	base: __dirname + '/outer.tpl.html',
+	content: __dirname + '/index/index.tpl.html',
 	data: {
 		title: 'Home | Dawn of Worlds',
 		styles: [

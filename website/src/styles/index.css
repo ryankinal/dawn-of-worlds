@@ -1,3 +1,39 @@
-body {
-	background-color: rgba(0, 167, 0, 0.8);
+.account-panel {
+	background: rgba(var(--background-color-one), 0.7);
+	flex-wrap: nowrap;
+	box-shadow: 0 5px 15px 10px #999;
+	overflow: hidden;
+	height: 489px;
+}
+
+.slide {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 20px;
+	transition: transform 1s;
+	height: 100%;
+}
+
+.slide > div {
+	vertical-align: top;
+	margin: 20px 0;
+	width: 50%;
+	padding: 30px 50px;
+}
+
+.account-panel.step-two .slide {
+	transform: translateY(-100%);
+}
+
+.account-panel.step-three .slide {
+	transform: translateY(-200%);
+}
+
+.account-panel > div:first-child {
+	border-right: solid var(--body-text-color) 1px;
+}
+
+.confirm-form {
+	text-align: center;
 }
